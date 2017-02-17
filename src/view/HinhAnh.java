@@ -26,11 +26,13 @@ public class HinhAnh {
 		nhanVatXoayLen=nhanVat.getSubimage(20, 0, 20, 30);
 		nhanVatXoayXuong=nhanVat.getSubimage(20, 60, 20, 30);
 		// hinh boom
-		// BufferedImage bufferedImage=ImageIO.read(new File("img/boom.PNG"));
+		 BufferedImage boomTong=ImageIO.read(new File("img/boom.PNG"));
 
-		// boom = bufferedImage.getSubimage(0, 0, 23, 23);
-		// boomNo = ImageIO.read(new File("img/boomNo.PNG"));
-		// boomDen = ImageIO.read(new File("img/boomDen.PNG"));
+		 boom = boomTong.getSubimage(0, 0, 23, 23);
+		 boomDen = boomTong.getSubimage(0, 23, 23, 23);
+		 boomNo = boomTong.getSubimage(0, 40, 20, 20);
+//		 boomNo = ImageIO.read(new File("img/boomNo.PNG"));
+//		 boomDen = ImageIO.read(new File("img/boomDen.PNG"));
 
 		// Model Map
 		buiCo = tongHop.getSubimage(0, 0, 20, 20);

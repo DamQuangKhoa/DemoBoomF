@@ -7,30 +7,21 @@ import controler.ControllerHero;
 import controler.HeroMethod;
 
 public class XuLyHero implements HeroMethod {
+	
 	@Override
 	public boolean kiemTraDiChuyenDuoc(int x, int y, boolean[][] chan) {
-		try {
-			if (chan[x][y] != true)
-				return true;
-		} catch (Exception e) {
-		}
 		return false;
 	}
-
-
 	public static final int RONG= 600,CAO=600,KICHTHUOCVUONG =30,
 			KICHTHUOCKHUNG=30,DODAI=20,MORONG=2;
 	public static boolean huong = false; // false la di xuong
-	
 	@Override
 	public void chet() {
-		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
 	public void quaMan() {
-		// TODO Auto-generated method stub
 		
 	}
 
